@@ -1,0 +1,91 @@
+<!-- templates/site/index.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafetería - Inicio</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+
+      nav {
+        background-color: #444;
+        padding: 1em;
+        text-align: center;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+
+      nav a {
+        color: #fff;
+        margin: 0 1em;
+        text-decoration: none;
+      }
+
+      section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+      img {
+        max-width: 90%;
+        border-radius: 30px;
+        padding: 1em;
+        grid-row: 1 / -1;
+      }
+
+      h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenido a nuestra cafetería</h1>
+    </header>
+
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/menu">Menú</a>
+      <a href="/about">Nosotros</a>
+      <a href="/contact">Contacto</a>
+      <a href="/location">Ubicación</a>
+    </nav>
+
+    <section>
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/668/530/460/coffee-cup-beverage-espresso-wallpaper-preview.jpg"
+        alt="Cafetería"
+      />
+      <h2>Disfruta de deliciosos cafés y más</h2>
+      <p>
+        Descubre nuestra variedad de cafés y deliciosos platillos en un ambiente
+        acogedor.
+      </p>
+    </section>
+  </body>
+</html>

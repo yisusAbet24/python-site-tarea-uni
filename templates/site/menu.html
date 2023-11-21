@@ -1,0 +1,111 @@
+<!-- templates/site/menu.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafetería - Menú</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #444;
+        padding: 1em;
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        margin: 0 1em;
+        text-decoration: none;
+      }
+
+      section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .menu-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 1em;
+
+        background-color: #fff;
+      }
+
+      .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        height: 250px;
+        color: #fff;
+      
+      }
+      
+      .coffe1{
+        background-image: url("https://editorialtelevisa.brightspotcdn.com/wp-content/uploads/2013/04/cafe-espresso.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .coffe2{
+        background-image: url("https://cdn2.cocinadelirante.com/sites/default/files/images/2021/07/como-hacer-cafe-latte-con-canela.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .coffe3{
+        background-image: url("https://www.casadulce.com.mx/wp-content/uploads/2019/09/chocolateextremomediano1-400x400.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Descubre nuestro Menú</h1>
+    </header>
+
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/menu">Menú</a>
+      <a href="/about">Nosotros</a>
+      <a href="/contact">Contacto</a>
+      <a href="/location">Ubicación</a>
+    </nav>
+
+    <section>
+      <div class="menu-item coffe1">
+        <h2>Café Espresso</h2>
+        <p>Un espresso fuerte y aromático que te hará vibrar.</p>
+      </div>
+
+      <div class="menu-item coffe2">
+        <h2>Café Latte</h2>
+        <p>Una mezcla suave de espresso y leche vaporizada.</p>
+      </div>
+
+      <div class="menu-item coffe3">
+        <h2>Pastel de Chocolate</h2>
+        <p>Delicioso pastel de chocolate con cobertura de fudge.</p>
+      </div>
+    </section>
+  </body>
+</html>

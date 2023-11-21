@@ -1,0 +1,116 @@
+<!-- templates/site/about.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafetería - Nosotros</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+
+      nav {
+        background-color: #444;
+        padding: 1em;
+        text-align: center;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+
+      nav a {
+        color: #fff;
+        margin: 0 1em;
+        text-decoration: none;
+      }
+
+      section {
+        padding: 2em;
+        text-align: center;
+      }
+
+      .about-content {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 1em;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+      }
+
+      .about-image {
+        border-radius: 5px;
+
+        max-width: 100%;
+      }
+
+      .img {
+        display: flex;
+        align-items: center;
+      }
+
+      .about-content{
+        font-size: 0.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Conoce más sobre nosotros</h1>
+    </header>
+
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/menu">Menú</a>
+      <a href="/about">Nosotros</a>
+      <a href="/contact">Contacto</a>
+      <a href="/location">Ubicación</a>
+    </nav>
+
+    <section>
+      <div class="about-content">
+        <div>
+          <p>
+            Somos una cafetería apasionada por brindar experiencias únicas a
+            nuestros clientes. Con años de experiencia, nos esforzamos por
+            servir los mejores cafés y deliciosos platillos en un ambiente
+            acogedor.
+          </p>
+
+          <p>
+            Nuestra misión es crear un lugar donde puedas relajarte, disfrutar
+            de buena compañía y degustar productos de alta calidad. Trabajamos
+            con proveedores locales para garantizar ingredientes frescos y
+            sostenibles en cada uno de nuestros productos.
+          </p>
+        </div>
+
+        <div class="img">
+          <img
+            class="about-image"
+            src="https://placekitten.com/600/400"
+            alt="Nosotros"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
